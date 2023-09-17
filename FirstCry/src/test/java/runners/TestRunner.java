@@ -7,7 +7,7 @@ import io.cucumber.testng.CucumberOptions;
 		features = "Features",
 		glue = "stepDefinations",
 //		plugin = "com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:",
-		monochrome = true,
+		monochrome = true
 //		tags = "@TC_001"
 //		tags = "@BhoomikaBS"
 //		tags = "@Arun"
@@ -15,7 +15,7 @@ import io.cucumber.testng.CucumberOptions;
 //		tags = "@VishnuPriya"
 //		tags = "@Swapnil"
 //		tags = "@AkashJ"
-		tags = "@Rani"
+//		tags = "@Rani"
 		)
 
 public class TestRunner extends AbstractTestNGCucumberTests{
