@@ -23,6 +23,7 @@ public class MyProfileFuncSteps extends Driver
 	{
 //	    driver = new EdgeDriver();
 //	    driver.manage().window().maximize();
+		logger.info("MY PROFILE FUNCTIONALITY TEST STARTED");
 	}
 
 	@When("I navigate to the application")
@@ -87,6 +88,7 @@ public class MyProfileFuncSteps extends Driver
 		    // Print actual and expected error messages for debugging
 		    System.out.println("Expected Error Text: " + expectedErrText);
 		    System.out.println("Actual Error Text: " + actualErrText);
+		    logger.info("MY PROFILE FUNCTIONALITY TEST EXECUTED SUCCESSFULLY");
 
 	}
 	}

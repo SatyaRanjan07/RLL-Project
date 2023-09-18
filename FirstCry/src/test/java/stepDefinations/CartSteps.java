@@ -21,7 +21,7 @@ public class CartSteps extends Driver {
 //		loginpage.login();
 //		loginpage.clickOnCont();
 //		loginpage.clickOnSubmitBTN();
-		    
+		logger.info("CART FUNCTIONALITY TEST STARTED");
 		landingpage.goToLogInPage();
 	    loginpage.login();
 	    Thread.sleep(2000);
@@ -70,6 +70,7 @@ public class CartSteps extends Driver {
 		String actual = "Hey! No items in your cart";
 		String expected = cartpage.getMassege();
 		Assert.assertEquals(actual, expected);
+		logger.info("CART FUNCTIONALITY TEST EXECUTED SUCCESSFULLY");
 	    
 	}
 	
@@ -82,6 +83,7 @@ public class CartSteps extends Driver {
 	@When("he clicks on two")
 	public void he_clicks_on_two() throws InterruptedException {
 		cartpage.qtyTWOBTN();
+		
 	}
 
 }

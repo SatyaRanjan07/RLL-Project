@@ -23,6 +23,7 @@ public class preschoolSteps extends Driver {
 //	}
 	@When("he clicks on login")
 	public void he_clicks_on_login() throws InterruptedException {
+		logger.info("PRE SCHOOL FUNCTIONALITY TEST STARTED");
 
 		landingpage.goToLogInPage();
 	    loginpage.login();
@@ -77,6 +78,7 @@ public class preschoolSteps extends Driver {
 		String expectedText ="FirstCry Intellitots Preschool Locator";
 		String actualText = vt.getText();
 		Assert.assertEquals(actualText, expectedText);
+		logger.info("PRE SCHOOL FUNCTIONALITY TEST EXECUTED SUCCESSFULLY");
 			}
 	    
 	

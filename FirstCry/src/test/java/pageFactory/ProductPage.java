@@ -10,13 +10,13 @@ public class ProductPage {
 	@FindBy(xpath = "//a[contains(@title,'Spiky 100% Accuracy Silicone Spiky Sporty Analogue Watch Bunny Design - Pink   ')]")
 	private WebElement watchesFirstItem;
 	
-	@FindBy(xpath = "//a[contains(@title,'Kookie Kids Full Sleeves Padded Hooded Winter Jacket Solid Coloured - Red')]")
+	@FindBy(xpath = "//a[contains(@title,'Kookie Kids Full Sleeves Padded Hooded Winter Jacket Solid Coloured - Black')]")
 	private WebElement jacketsFirstItem;
 	
-	@FindBy(xpath = "//a[contains(@title,'Pine Kids Cotton Woven Roll Up Full Sleeves Solid Colour Kurta Shirt with Mandarin Collar- Maroon')]")
+	@FindBy(xpath = "//a[contains(@title,'Pine Kids 100% Cotton Roll Up Full Sleeves Checkered Shirt with Inner Tee - Blue')]")
 	private WebElement shirtsFirstItem;
 	
-	@FindBy(xpath = "//a[contains(@title,'Babyhug Denim Full Length Stretchable Washed Jogger with Draw Cord - Light Blue')]")
+	@FindBy(xpath = "//a[contains(@title,'Babyhug Full Length Stretchable Cotton Corduroy Joggers Spec Embroidery-Khaki')]")
 	private WebElement pantsFirstItem;
 	
 	@FindBy(xpath = "//div[contains(@class,'lblock lft')]")

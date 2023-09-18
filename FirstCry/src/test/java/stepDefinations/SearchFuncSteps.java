@@ -21,6 +21,7 @@ public class SearchFuncSteps extends Driver {
 //	    Thread.sleep(2000);
 //	    loginpage.clickOnCont();
 //	    loginpage.clickOnSubmitBTN();
+		logger.info("SEARCH FUNCTIONALITY TEST STARTED");
 	}
 
 
@@ -66,7 +67,7 @@ public class SearchFuncSteps extends Driver {
 	@Then("he must be able to see the Pine Kids Cotton Roll Up Full Sleeves Check Shirt item successfully.")
 	public void he_must_be_able_to_see_the_pine_kids_cotton_roll_up_full_sleeves_check_shirt_item_successfully() {
 		String actualValue = Productpage.getTitleOfShirtsFirstItem();
-		  String expectedValue = "Pine Kids Cotton Woven Roll Up Full Sleeves Solid Colour Kurta Shirt...";
+		  String expectedValue = "Pine Kids 100% Cotton Roll Up Full Sleeves Checkered Shirt with...";
 		  Assert.assertEquals(actualValue, expectedValue);
 		  landingpage.comeToHomePage();
 	}
@@ -74,9 +75,10 @@ public class SearchFuncSteps extends Driver {
 	@Then("he must be able to see the Babyhug Denim Full Length Stretchable Washed Jogger item successfully.")
 	public void he_must_be_able_to_see_the_babyhug_denim_full_length_stretchable_washed_jogger_item_successfully() {
 		String actualValue = Productpage.getTitleOfPantsFirstItem();
-		  String expectedValue = "Babyhug Denim Full Length Stretchable Washed Jogger with...";
+		  String expectedValue = "Babyhug Full Length Stretchable Cotton Corduroy Joggers Spec...";
 		  Assert.assertEquals(actualValue, expectedValue);
 		  landingpage.comeToHomePage();
+		  logger.info("SEARCH FUNCTIONALITY TEST EXECUTED SUCCESSFULLY");
 	}
 
 }

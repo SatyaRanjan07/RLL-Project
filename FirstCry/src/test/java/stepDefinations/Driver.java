@@ -1,5 +1,8 @@
 package stepDefinations;
 
+import org.apache.log4j.Level;
+import org.apache.log4j.Logger;
+import org.apache.log4j.PropertyConfigurator;
 import org.openqa.selenium.chrome.ChromeDriver;
 
 import pageFactory.FindStorePage;
@@ -18,6 +21,9 @@ import pageFactory.verifyingtext;
 
 public class Driver extends Tools {
 	
+	
+	public static Logger logger;
+
 	protected static LandingPage landingpage;
 	protected static LogInPage loginpage;
 	protected static ProductPage Productpage;
@@ -50,6 +56,11 @@ public class Driver extends Tools {
 		  vt = new verifyingtext(driver);
 		  cartpage = new CartPage(driver);
 		  addToCartPage = new AddToCartPage(driver);
+		  
+		  logger = Logger.getLogger("LogDemo");
+			PropertyConfigurator.configure("log4j.properties");
+			logger.setLevel(Level.DEBUG);
+
 	}
 
 }

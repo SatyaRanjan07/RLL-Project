@@ -13,7 +13,7 @@ public class ShortlistFuncSteps extends Driver  {
 	
 	@Given("I am on the login page")
 	public void i_am_on_the_login_page() {
-	
+		logger.info("SHORTLIST FUNCTIONALITY TEST STARTED");
 	}
 
 	@When("I log in with valid credentials")
@@ -52,6 +52,7 @@ public class ShortlistFuncSteps extends Driver  {
 		DeleteProducts d = new DeleteProducts(driver);
 		d.productdelete();
 		driver.switchTo().alert().accept();
+		logger.info("SHORTLIST FUNCTIONALITY TEST EXECUTED SUCCESSFULLY");
 		
 	}
 

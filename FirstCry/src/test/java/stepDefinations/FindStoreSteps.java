@@ -32,7 +32,7 @@ public void he_click_on_login_page_and_enter_the_details() throws InterruptedExc
 //	loginPage.clickContinueBtn();
 //	Thread.sleep(25000);
 //	loginPage.clickSubmitBtn();
-	
+	logger.info("FIND STORE FUNCTIONALITY TEST STARTED");
 	landingpage.goToLogInPage();
     loginpage.login();
     Thread.sleep(2000);
@@ -86,6 +86,7 @@ public void he_must_able_to_see_the_search_store_result() {
 	String expectedText="Firstcry Store in Chennai Medavakkam";
 	String actualText=Findstorepage.VerifyText();
 	Assert.assertEquals(actualText, expectedText);
+	logger.info("FIND STORE FUNCTIONALITY TEST EXECUTED SUCCESSFULLY");
 
 }
 

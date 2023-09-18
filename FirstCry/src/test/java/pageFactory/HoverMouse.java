@@ -16,6 +16,9 @@ public class HoverMouse
 	@FindBy(linkText = "My Profile")
 	private WebElement myProfile;
 	
+	@FindBy(xpath = "/html/body/div[1]/div[5]/div/div[3]/ul/li[8]/span[2]/ul/li[17]/span")
+	private WebElement logOut;
+	
 	public HoverMouse(WebDriver driver)
 	{
 		PageFactory.initElements(driver, this);
@@ -32,4 +35,7 @@ public class HoverMouse
 		myProfile.click();
 	}
 	
+	public void clickLogOut() {
+		logOut.click();
+	}
 }

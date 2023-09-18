@@ -73,16 +73,16 @@ public class TestListener implements ITestListener {
 
 			}
 
-			TakesScreenshot scrShot =((TakesScreenshot)driver);
-			File screenshotFile=scrShot.getScreenshotAs(OutputType.FILE);
-//			File screenshotFile = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
+//			TakesScreenshot scrShot =((TakesScreenshot)driver);
+//			File screenshotFile=scrShot.getScreenshotAs(OutputType.FILE);
+			File screenshotFile = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
 			targetLocation = reportsPath + fileSeperator + testClassName + fileSeperator + screenShotName;// define
 																											// location
 			File targetFile = new File(targetLocation);
 			log.info("Screen shot file location - " + screenshotFile.getAbsolutePath());
 			log.info("Target File location - " + targetFile.getAbsolutePath());
-//			FileHandler.copy(screenshotFile, targetFile);
-			FileUtils.copyFile(screenshotFile, targetFile);
+			FileHandler.copy(screenshotFile, targetFile);
+//			FileUtils.copyFile(screenshotFile, targetFile);
 
 		} catch (FileNotFoundException e) {
 			log.info("File not found exception occurred while taking screenshot " + e.getMessage());

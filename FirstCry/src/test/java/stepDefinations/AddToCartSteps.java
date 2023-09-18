@@ -15,6 +15,7 @@ public class AddToCartSteps extends Driver{
 	@Given("a user is on the landing page of firstcry")
 	public void a_user_is_on_the_landing_page_of_firstcry() {
 		assertTrue(driver.getTitle().equals("Baby Products Online India: Newborn Baby Products & Kids Online Shopping at FirstCry.com"));
+		logger.info("ADDTOCART FUNCTIONALITY TEST EXECUTED SUCCESSFULLY");
 	}
 	@When("he type {string} and select the first option from the auto-complete box")
 	public void he_type_and_select_the_first_option_from_the_auto_complete_box(String string) throws InterruptedException {
@@ -40,5 +41,6 @@ public class AddToCartSteps extends Driver{
 		String expectedText = "Portronics POR-704 Portable Laptop Stand with Cooling Fan - Grey";
 	    String actualText = addToCartPage.getText();
 	    Assert.assertEquals(actualText, expectedText);
+	    logger.info("ADDTOCART FUNCTIONALITY TEST EXECUTED SUCCESSFULLY");
 	}
 }

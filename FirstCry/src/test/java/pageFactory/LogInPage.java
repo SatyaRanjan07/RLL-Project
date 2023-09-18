@@ -29,6 +29,9 @@ public class LogInPage {
 	@FindBy(xpath ="/html/body/div[1]/div[5]/div/div[3]/ul/li[9]/a/span[2]")
 	private WebElement myShortlistbutton;
 	
+	@FindBy(xpath = "/html/body/div[2]/p/text()")
+	private WebElement resgisterTxt;
+	
 	public LogInPage(WebDriver driver) {
 		PageFactory.initElements(driver, this);
 		actions = new Actions(driver);
@@ -58,6 +61,12 @@ public class LogInPage {
 
 	public void clickfindpreschool() {
 		findpreschool.click();
+	}
+	public void giveInvalidEmailId() {
+		enterEmail.sendKeys("satya123z@gmail.com");
+	}
+	public String getRedgText() {
+		return resgisterTxt.getText();
 	}
 
 }
