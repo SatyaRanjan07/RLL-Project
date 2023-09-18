@@ -72,5 +72,16 @@ public class CartSteps extends Driver {
 		Assert.assertEquals(actual, expected);
 	    
 	}
+	
+	@When("he clicks on quantity")
+	public void he_clicks_on_quantity() throws InterruptedException {
+		cartpage.quantityBTN();
+	    
+	}
+
+	@When("he clicks on two")
+	public void he_clicks_on_two() throws InterruptedException {
+		cartpage.qtyTWOBTN();
+	}
 
 }
