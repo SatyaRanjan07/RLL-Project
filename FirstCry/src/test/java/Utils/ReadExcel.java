@@ -16,7 +16,7 @@ public class ReadExcel {
 	public static String[][] getData(String fileName, String sheetName) throws IOException {
 		File file = new File(fileName);
 		FileInputStream ips = new FileInputStream(file); // FileOutputStream for writing the data on excel sheet
-		@SuppressWarnings("resource")
+//		@SuppressWarnings("resource")
 		Workbook Wb = new XSSFWorkbook(ips);
 		Sheet Sh = Wb.getSheet(sheetName);
 		int rowNum = Sh.getLastRowNum() + 1;

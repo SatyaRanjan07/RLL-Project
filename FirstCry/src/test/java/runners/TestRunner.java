@@ -8,7 +8,6 @@ import io.cucumber.testng.CucumberOptions;
 @CucumberOptions(
 		features = "Features",
 		glue = "stepDefinations",
-//		plugin = "com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:",
 		monochrome = true
 //		tags = "@TC_001"
 //		tags = "@BhoomikaBS"
@@ -19,7 +18,7 @@ import io.cucumber.testng.CucumberOptions;
 //		tags = "@AkashJ"
 //		tags = "@Rani"
 		)
-//@Listeners(com.Listeners.TestListener.class)
+@Listeners(com.Listeners.TestListener.class)
 public class TestRunner extends AbstractTestNGCucumberTests{
 	
 	
